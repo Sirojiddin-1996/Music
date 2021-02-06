@@ -1,0 +1,109 @@
+* { 
+	box-sizing: border-box;
+}
+body{
+	background-color:#001874; 
+}
+
+.music-box{
+	border: 3px ridge #00FF00;
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #00EFEB;
+	padding: 50px;
+}
+h1{
+	color:#B12137;
+	font-family: 'Lemonada', cursive;
+}
+.search-box {
+	display: flex;
+	border: 2px ridge #00EF2A;
+	padding: 5px;
+	background-color: #E4A126;
+	margin-bottom: 50px;
+}
+input {
+	font-family: 'Lemonada', cursive;
+	outline: none;
+	flex-grow: 5;
+	padding: 10px;
+	font-size: 25px;
+}
+img {
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+	border-radius: 15px;
+}
+button {
+	font-family: 'Lemonada', cursive;
+
+	flex-grow: 1;
+	font-size: 25px;
+
+}
+.music-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.music-list li {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	flex-shrink: 1;
+	padding: 15px;
+	border: 5px ridge #FF7287;
+	margin-bottom: 15px;
+	background-color: black;
+	color: white;
+	max-width: 350px;
+	min-height: 350px;
+}
+
+.music-list li:before {
+	position: absolute;
+	content: "";
+	display: block;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.7);
+	z-index: 1;
+}
+.music-list li h3,
+.music-list li a,
+.music-list li div {
+	position: relative;
+	font-family: 'Lemonada', cursive;
+	z-index: 2;
+}
+.music-list li div {
+	margin-top: auto;
+}
+.music-list li h3 {
+	font-family: 'Lemonada', cursive;
+	position: relative;
+	z-index: 2;
+	margin: 0;
+	display: inline-block;
+	font-size: 30px;
+	letter-spacing: 1px;
+}
+#btn{
+	border:none;
+	outline: none;
+	font-family: 'Lemonada', cursive;
+	background-color: #FF304F;
+	color: white;
+}
+#btn:hover{
+	background-color: #FF7287;
+	color: hsla(0.0, 0.0%, 100.0%, 1.0)
+}
